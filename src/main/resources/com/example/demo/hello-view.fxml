@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Bem-vindo ao Sistema de Produtos" />
+   <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+          <Button onAction="#handleListaProdutos" ButtonBar.buttonData="RIGHT" style="-fx-background-color: #ff6600; -fx-border-radius: 1;" text="Listar Produtos">
+            <effect>
+               <BoxBlur height="0.0" width="0.0" />
+            </effect>
+         </Button>
+         <Button layoutX="314.0" layoutY="18.0" onAction="#handleListaProdutos" ButtonBar.buttonData="LEFT" style="-fx-background-color: #ff6600; -fx-border-radius: 1;" text="Listar">
+            <effect>
+               <BoxBlur height="0.0" width="0.0" />
+            </effect>
+         </Button>
+         <Button layoutX="208.0" layoutY="18.0" onAction="#handleListaProdutos" style="-fx-background-color: #ff6600; -fx-border-radius: 1;" text="Listar Produtos 2">
+            <effect>
+               <BoxBlur height="0.0" width="0.0" />
+            </effect>
+         </Button>
+      </buttons>
+   </ButtonBar>
+    <TextArea fx:id="produtoTextArea" prefHeight="200.0" prefWidth="400.0" wrapText="true" />
+
+</VBox>
